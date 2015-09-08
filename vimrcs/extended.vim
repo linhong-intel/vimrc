@@ -32,8 +32,8 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
-if has("gui_running")
     set background=dark
+if has("gui_running")
     colorscheme peaksea
 else
     colorscheme desert
@@ -45,7 +45,7 @@ endif
 " => Fast editing and reloading of vimrc configs
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>e :e! ~/.vim_runtime/my_configs.vim<cr>
-autocmd! bufwritepost vimrc source ~/.vim_runtime/my_configs.vim
+autocmd! bufwritepost my_configs.vim source ~/.vim_runtime/my_configs.vim
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
