@@ -10,7 +10,12 @@ let g:airline#extensions#tabline#enabled = 1        " enable tabline
 let g:airline#extensions#tabline#show_buffers = 0   " not show buffer in tabline
 let g:airline#extensions#tabline#show_tabs = 1      " only show tab
 let g:airline#extensions#tabline#tab_nr_type = 1    " show tab #
+let g:airline#extensions#syntastic#enabled=0
 
 
 " load cscope.out
 cs add ./cscope.out
+
+set mouse=""
+
+inoremap jk <esc>
