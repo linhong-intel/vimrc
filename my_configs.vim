@@ -11,6 +11,7 @@ let g:airline#extensions#tabline#show_buffers = 0   " not show buffer in tabline
 let g:airline#extensions#tabline#show_tabs = 1      " only show tab
 let g:airline#extensions#tabline#tab_nr_type = 1    " show tab #
 let g:airline#extensions#syntastic#enabled=0
+let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 
 " load cscope.out
@@ -21,6 +22,7 @@ set mouse=""
 
 " Very useful key map
 inoremap jk <esc>
+vnoremap jk <esc>
 
 " Re-load .vimrc
 nnoremap <leader>ev :vsplit ~/.vim_runtime/my_configs.vim<cr>
