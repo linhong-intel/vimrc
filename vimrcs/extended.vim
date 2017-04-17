@@ -10,7 +10,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set font according to system
 if has("mac") || has("macunix")
-    set gfn=Source\ Code\ Pro:h15,Menlo:h15
+    set gfn=Source\ Code\ Pro:h15,Ubuntu\ Mono\ derivative\ Powerline:h15
 elseif has("win16") || has("win32")
     set gfn=Source\ Code\ Pro:h12,Bitstream\ Vera\ Sans\ Mono:h11
 elseif has("linux")
@@ -20,10 +20,10 @@ elseif has("unix")
 endif
 
 " Open MacVim in fullscreen mode
-if has("gui_macvim")
-    set fuoptions=maxvert,maxhorz
-    au GUIEnter * set fullscreen
-endif
+"if has("gui_macvim")
+"    set fuoptions=maxvert,maxhorz
+"    au GUIEnter * set fullscreen
+"endif
 
 " Disable scrollbars (real hackers don't use scrollbars for navigation!)
 set guioptions-=r
@@ -32,12 +32,12 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
-    set background=dark
+    set background=light
 if has("gui_running")
-    colorscheme peaksea
+    colorscheme solarized
 else
-    colorscheme desert
-    let g:colors_name="desert"
+    colorscheme solarized
+    let g:colors_name="solarized"
 endif
 
 
